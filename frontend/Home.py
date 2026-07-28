@@ -24,17 +24,21 @@ cost optimizations, and answer cloud operations questions.
 
 st.divider()
 
+
 # ==========================================================
 # FEATURES
 # ==========================================================
 
 st.subheader("🚀 Platform Capabilities")
+# Fixed height for all 4 containers
+CARD_HEIGHT = 210
+
 
 col1, col2 = st.columns(2)
 
 with col1:
 
-    with st.container(border=True):
+    with st.container(border=True,height=CARD_HEIGHT):
 
         st.markdown("## 📊 Cloud Monitoring")
 
@@ -47,7 +51,7 @@ Monitor Google Cloud resources including:
 - Cloud Storage
 """)
 
-    with st.container(border=True):
+    with st.container(border=True,height=CARD_HEIGHT):
 
         st.markdown("## 💬 AI Copilot")
 
@@ -59,7 +63,7 @@ answers.
 
 with col2:
 
-    with st.container(border=True):
+    with st.container(border=True,height=CARD_HEIGHT):
 
         st.markdown("## 🧠 AI Cloud Architect")
 
@@ -72,7 +76,7 @@ Gemini analyzes historical metrics to:
 - Estimate business impact
 """)
 
-    with st.container(border=True):
+    with st.container(border=True,height=CARD_HEIGHT):
 
         st.markdown("## 💰 FinOps Insights")
 

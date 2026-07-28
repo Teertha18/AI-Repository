@@ -22,7 +22,8 @@ class Settings(BaseSettings):
     gcp_region: str = "asia-south1"
 
     google_application_credentials: str = ""
-
+    
+    # Mock Provider Configuration
     provider: str = "mock"
 
     # Tell Pydantic where to load environment variables from
